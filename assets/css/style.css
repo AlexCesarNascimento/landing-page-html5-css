@@ -1,10 +1,10 @@
 :root {
     --primary-color: #0A1128;
-    --secondary-color: #0A1128;
-    --tertiary-color: #0A1128;
+    --secondary-color: #FFF;
+    --light-gray-color: #EEE;
 
-    --primary-text-color: #ffffff;
-
+    --primary-text-color: #FFF;
+    --secondary-text-color: #0A1128;
     --gap: 3rem
 }
 
@@ -21,6 +21,11 @@ html {
 body {
     font-family: 'Open Sans', sans-serif;
     font-size: 2rem;
+}
+
+a {
+    text-decoration: none;
+    color: var(--secondary-text-color);
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -65,12 +70,67 @@ h6 {
     color: var(--primary-text-color)
 }
 
+.light-bg {
+    background: var(--secondary-color);
+    background-size:cover;
+    background-position: center center;
+}
+
 .main-content {
     max-width: 1200px;
     margin: 0 auto;
     padding: var(--gap);
 }
 
+.menu{
+    background: var(--secondary-color);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    border-bottom: 1px solid var(--light-gray-color);
+}
+
+.menu-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+}
+
+.menu ul li a {
+    display: block;
+    padding: 2rem;
+    font-size: 1.8rem;
+    position:relative
+}
+
+.menu ul li a::after {
+    content: '';
+    position: absolute;
+    bottom: 1.5rem;
+    left: 50%;
+    width: 0;
+    border-bottom: 0.2rem solid crimson;
+    transition: all 0.3s ease-in-out;
+}
+.menu ul li a:hover::after {
+    width: 50px;
+    left: 25%;
+}
+
+
+.menu h1 {
+    font-size: 2.3rem;
+}
+
 .section {
     min-height: 100vh;
 }
+
