@@ -17,7 +17,7 @@
 
 > Multiplicando valor do texto com variavel
 
-**div>div{item $}*3**
+**div>div{item $}*3 **
 
 ```html
 <div>
@@ -30,7 +30,7 @@
 
 > Multiplicando a classe com variavel
 
-**ul>li.item$@*3**
+**ul>li.item$@* 3 **
 
 ```html
 <ul>
