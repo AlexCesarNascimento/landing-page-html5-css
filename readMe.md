@@ -16,6 +16,7 @@
 [documentação](https://docs.emmet.io/cheat-sheet/)
 
 > Multiplicando valor do texto com variavel
+
 **div>div{item $} * 3**
 
 ```html
@@ -26,7 +27,9 @@
 </div>
 ```
 
+
 > Multiplicando a classe com variavel
+
 **ul>li.item$@*3**
 
 ```html
@@ -37,7 +40,9 @@
 </ul>
 ```
 
+
 > Adicionado um irmão para a div pai ^
+
 **div.avo>div.pai>div.filho^div.tio**
 
 ```html
