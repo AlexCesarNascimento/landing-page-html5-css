@@ -17,7 +17,7 @@
 
 > Multiplicando valor do texto com variavel
 
-**div>div{item $} * 3**
+**div>div{item $}*3**
 
 ```html
 <div>
