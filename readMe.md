@@ -1,5 +1,6 @@
 # Commits
 
+```
 <Tipos>(<Escopo>): <curta descrição>
   │       │             │
   │       │             └─⫸ Resumo no tempo presente. Não capitalizado. Sem ponto final.
@@ -9,4 +10,4 @@
   |                               No desenvolvimento de aplicativos, o escopo pode ser uma página, um módulo ou um componente.
   │
   └─⫸ Tipos de commit: feat|fix|docs|style|refactor|test|chore|perf|ci|build|temp
-
+```
