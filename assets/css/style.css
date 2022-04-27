@@ -2,6 +2,7 @@
     --primary-color: #0A1128;
     --secondary-color: #FFF;
     --light-gray-color: #EEE;
+    --light-red-color: crimson;
 
     --primary-text-color: #FFF;
     --secondary-text-color: #0A1128;
@@ -11,7 +12,6 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
 html {
@@ -21,6 +21,7 @@ html {
 body {
     font-family: 'Open Sans', sans-serif;
     font-size: 2rem;
+    line-height: 1.5;
 }
 
 a {
@@ -77,18 +78,18 @@ h6 {
 }
 
 .main-content {
-    max-width: 1200px;
+    max-width: 120rem;
     margin: 0 auto;
     padding: var(--gap);
 }
 
 .menu{
-    background: var(--secondary-color);
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
-    border-bottom: 1px solid var(--light-gray-color);
+    border-bottom: 0.1rem solid var(--light-gray-color);
+    z-index: 1;
 }
 
 .menu-content {
@@ -117,20 +118,50 @@ h6 {
     bottom: 1.5rem;
     left: 50%;
     width: 0;
-    border-bottom: 0.2rem solid crimson;
+    border-bottom: 0.2rem solid var(--light-red-color);
     transition: all 0.3s ease-in-out;
 }
 .menu ul li a:hover::after {
-    width: 50px;
+    width: 5rem;
     left: 25%;
 }
 
-
 .menu h1 {
     font-size: 2.3rem;
+}
+
+.menu-spacing{
+    height: 6.5rem;
 }
 
 .section {
     min-height: 100vh;
 }
 
+.hero-content{
+    position: relative;
+    top: -8rem;
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    justify-items: center;
+    gap: var(--gap);
+    height: calc(100vh - 6.5rem);
+}
+
+.hero-text-content, .hero-img {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+}
+
+.hero-text-content h2{
+    font-size: 8rem;
+    margin-bottom: 5rem;
+    text-transform: uppercase;
+    line-height: 1.2;
+}
+
+.hero-img img{
+    max-width: 100%;
+    height: auto;
+}
