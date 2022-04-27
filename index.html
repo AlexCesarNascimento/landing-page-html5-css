@@ -21,11 +21,12 @@
         </h1>
         <nav>
           <ul>
-            <li><a href="#">intro</a></li>
-            <li><a href="#">top 3</a></li>
-            <li><a href="#">gallery</a></li>
-            <li><a href="#">work</a></li>
-            <li><a href="#">contact</a></li>
+            <li><a href="#intro">intro</a></li>
+            <li><a href="#grid-one">grid-one</a></li>
+            <li><a href="#gallery">gallery</a></li>
+            <li><a href="#grid-two">grid-two</a></li>
+            <li><a href="#pricing">pricing</a></li>
+            <li><a href="#contact">contact</a></li>
           </ul>
         </nav>
       </section>
@@ -33,7 +34,7 @@
     <!-- todo: posso trocar por um body{ padding-top: 6.4rem} -->
     <div class="menu-spacing"></div>
     <main class="section">
-      <section class="hero main-bg section">
+      <section id="hero" class="main-bg section">
         <div class="main-content hero-content">
 
           <div class="hero-text-content">
@@ -45,6 +46,20 @@
             <img src="assets/svg/javascript-not.svg" alt="css, javascript e html">
           </div>
           
+        </div>
+      </section>
+      <section id="intro" class="light-bg section">
+        <div class="main-content intro-content">
+          <h2>NEWS COVERAGE AND SOME SURPRISES</h2>
+          <p>
+            The release of Apple Silicon-based Macs at the end of last year generated a flurry of news coverage and some surprises at the machine’s performance. This post details some background information on the experience of porting Firefox to run natively on these CPUs.
+          </p>
+          <p>
+            We’ll start with some background on the Mac transition and give an overview of Firefox internals that needed to know about the new architecture, before moving on to the concept of Universal Binaries.
+          </p>
+          <p>
+            We’ll then explain how DRM/EME works on the new platform, talk about our experience with macOS Big Sur, and discuss various updater problems we had to deal with. We’ll conclude with the release and an overview of various other improvements that are in the pipeline.
+          </p>
         </div>
       </section>
     </main>
