@@ -88,7 +88,7 @@ h6 {
 .main-content {
     max-width: 120rem;
     margin: 0 auto;
-    padding: var(--gap);
+    padding: 10rem var(--gap);
 }
 
 .menu{
@@ -153,7 +153,7 @@ h6 {
     grid-template-columns: 1fr 1.5fr;
     justify-items: center;
     gap: var(--gap);
-    height: calc(100vh - 6.5rem);
+    min-height: calc(100vh - 6.5rem);
 }
 
 .hero-text-content, .hero-img {
@@ -162,7 +162,8 @@ h6 {
     justify-content: center;
 }
 
-.hero-img img{
+.hero-img img,
+.hero-img svg{
     max-width: 100%;
     height: auto;
 }
@@ -170,9 +171,9 @@ h6 {
 .intro-content{
     max-width: 64rem;
     display: flex;
-    flex-flow: column wrap;
+    flex-flow: column nowrap;
     justify-content: center;
-    height: 100vh;
+    max-height: 100vh;
     text-align: center;
     
 }
@@ -181,7 +182,7 @@ h6 {
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .grid-main-heading{
@@ -215,4 +216,19 @@ h6 {
     top: -4rem;
     left: -2rem;
     transform: rotate(5deg);
+}
+
+.gallery-img {
+    width: 100%;
+    max-width: 36rem;
+    max-height: 36rem;
+    overflow: hidden;
+}
+
+.gallery-img img{
+    transition: all 0.3s ease-in-out;
+}
+
+.gallery-img img:hover{
+    transform: translate(-3%, 3%) scale(1.2) rotate(5deg);
 }
