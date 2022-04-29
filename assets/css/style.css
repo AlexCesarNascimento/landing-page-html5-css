@@ -202,7 +202,7 @@ h6 {
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
-    max-height: 100vh;
+    min-height: 100vh;
     text-align: center;
     
 }
@@ -326,3 +326,18 @@ h6 {
 .form-group ::placeholder {
     color: rgb(192, 184, 184);
 }
+
+.footer {
+    text-align: center;
+    font-size: 1.6rem;
+}
+
+.footer a{
+    color: inherit;
+}
+
+.footer p{
+    margin: 0;
+    padding: 3rem;
+}
+
