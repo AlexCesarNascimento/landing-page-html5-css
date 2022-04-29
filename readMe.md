@@ -1,6 +1,6 @@
 # Landing page com os melhores padrões de HTML e CSS
 
-Esta página foi produzida excluisvamente com HTML e CSS e você pode acessa-la [aqui!](https://glistening-moonbeam-1da5d2.netlify.app/#)
+Esta página foi produzida exclusivamente com HTML e CSS e você pode acessa-la [aqui!](https://glistening-moonbeam-1da5d2.netlify.app/#)
 
 - Deploy: 
   - https://app.netlify.com/
@@ -8,8 +8,7 @@ Esta página foi produzida excluisvamente com HTML e CSS e você pode acessa-la 
   - Background: https://www.svgbackgrounds.com
   - Ilustrações: https://undraw.co/illustrations
   - Galeria: https://source.unsplash.com/random/360x360
-
-# Padrão de Commits
+# Commits
 
 ```
 <Tipos>(<Escopo>): <curta descrição>
