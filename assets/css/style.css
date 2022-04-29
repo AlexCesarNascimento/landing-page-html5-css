@@ -345,6 +345,22 @@ h6 {
     display: none;
 }
 
+.back-to-top{
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    background: var(--secondary-color);
+    width: 5rem;
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1rem;
+    color: var(--secondary-text-color);
+    transform: rotate(-90deg);
+    border: 0.5rem solid var(--light-gray-color);
+}
+
 @media (max-width: 800px){
     .main-content, .grid{
         grid-template-columns: 1fr;
