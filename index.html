@@ -14,13 +14,15 @@
     />
   </head>
   <body>
+    <input id="close-menu" class="close-menu" type="checkbox" aria-label="Close menu" role="button">
+    <label class="close-menu-label" for="close-menu" title="close menu"></label>
     <header class="menu light-bg">
       <section class="main-content menu-content">
         <h1>
           <a href="#">Logo</a>
         </h1>
         <nav>
-          <ul>
+          <ul onclick="getElementById('close-menu').checked = false;">
             <li><a href="#intro">intro</a></li>
             <li><a href="#grid-one">grid-one</a></li>
             <li><a href="#gallery">gallery</a></li>
@@ -185,11 +187,13 @@
                 </tr>
               </tbody>
               <tfoot>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td>Footer</td>
+                <tr>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td>Footer</td>
+                </tr>
               </tfoot>
             </table>
           </div>
